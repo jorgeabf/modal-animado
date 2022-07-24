@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" />
+    <link rel="stylesheet" href="popup.css" />
+    <title>Ventana Emergente Animada</title>
+    <script defer src="popup.js"></script>
+</head>
+
+<body>
+    <div class="popup-container">
+        <button id="btn-abrir-popup" class="boton-popup">Abrir Popup</button>
+        <div class="overlay-popup" id="overlay">
+            <div class="popup" id="popup">
+                <a href="#btn-abrir-popup" id="popup__close" class="popup__close"><i class="fas fa-times"></i></a>
+                <h3 class="popup__titulo">APÚNTATE</h3>
+                <h4 class="popup__subtitulo">y obtendrás un descuento.</h4>
+                <form class="popup__form">
+                    <div class="popup__inputs">
+                        <input class="popup__input" type="text" placeholder="Nombre" />
+                        <input class="popup__input" type="email" placeholder="Email" />
+                    </div>
+                    <input type="submit" class="boton-popup" value="Suscribirse" />
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
